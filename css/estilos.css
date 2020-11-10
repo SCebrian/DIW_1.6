@@ -1,0 +1,151 @@
+@font-face {
+    font-family:'LeagueGothicRegular';
+    src: 
+    url('../fonts/League_Gothic-webfont.eot')format('eot'),
+    url('../fonts/League_Gothic-webfont.woff')format('woff'),
+    url('../fonts/League_Gothic-webfont.ttf')format('truetype'),
+    url('../fonts/League_Gothic-webfont.svg')format('svg');
+    font-style: normal;
+}
+@font-face {
+    font-family:'AcknowledgementMedium';
+    src: 
+    url('../fonts/Acknowledgement-webfont.eot')format('eot'),
+    url('../fonts/Acknowledgement-webfont.woff')format('woff'),
+    url('../fonts/Acknowledgement-webfont.ttf')format('truetype'),
+    url('../fonts/Acknowledgement-webfont.svg')format('svg');
+}
+  
+*{
+    margin: 0 auto;
+    padding: 0px;
+}
+
+/* FORMULARIO */
+#registro {
+    margin: 10px auto;
+    border-style: solid;
+    border-width: 2px 0px;
+    border-color: #888;
+    width: 710px ;
+    text-align: center;
+    padding: 20px;
+    background-color:rgba(0, 0, 0, 20%);
+    background-image: url("../img/imgs/bg-form.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+/* LISTA*/
+#registro > ul > li {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+/* Etiqueta LABEL */
+#registro > ul > li > label {
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-family: 'LeagueGothicRegular';
+}
+
+/* TITULO */
+#registro > h1 {
+    font-size: 2em;
+    padding-bottom: 20px;
+    background-image: 
+        url("../img/imgs/bg-formtitle-left.png"), 
+        url("../img/imgs/bg-formtitle-right.png") ;
+    background-repeat: no-repeat;
+    background-size: 100px auto;
+    background-position: left 13px, right 13px ;
+    font-family:'AcknowledgementMedium';
+    text-transform: uppercase;
+}
+
+/* boton enviame */
+#registro-submit {
+    border: 0;
+    border-radius: 5px;
+    background-image: radial-gradient(circle, rgb(239,239,244) 0%, rgb(94,94,96) 24%);
+    color: white;
+    text-transform: uppercase;
+    font-size: 2em;
+    font-family:'LeagueGothicRegular';
+    opacity: 0.8;
+    transition: opacity linear .25s;
+    width: 360px;
+    height: 55px;
+}
+
+#registro-submit:hover{
+    opacity: 1;
+}
+
+input {
+    background: transparent no-repeat top right;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-color: black;
+    border-bottom-style: dotted ;
+    width: 60%;
+    height: 30px;
+    text-align: center;
+}
+
+#checkbox {
+    height: auto;
+}
+#tambienCSS3 {
+    height: auto;
+}
+#cantidad {
+    width: 100px;
+}
+
+input:focus {
+    outline: none;
+}
+
+input:required{
+    background-image:url('../img/imgs/required.png');
+}
+
+
+input:focus:valid {
+    background-image:url('../img/imgs/valid.png');
+}
+
+input:focus:invalid {
+    background-image:url('../img/imgs/invalid.png');
+}
+
+/* quitar recuadro invalido firefox */
+:invalid{
+    box-shadow:none;
+}
+
+::-moz-selection{
+    background:#484848;
+    color:#fff;
+    text-shadow:none;
+}
+
+::selection{
+    background-color: #484848 ;
+    color: #fff;
+    text-shadow: none;
+}
+
+#conocimientos {
+    width: 60%;
+    margin-top: 10px;
+  }
+  
+
+
+
+
+
